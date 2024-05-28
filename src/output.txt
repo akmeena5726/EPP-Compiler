@@ -1,0 +1,42 @@
+PUSH 3
+mem[99] = POP
+PUSH 5
+mem[98] = POP
+PUSH 7
+mem[97] = POP
+DEL = mem[99]
+DEL = mem[98]
+PUSH mem[97]
+mem[96] = POP
+PUSH mem[96]
+RET = POP
+
+PUSH 3
+mem[99] = POP
+PUSH 5
+mem[98] = POP
+PUSH 7
+mem[97] = POP
+DEL = mem[99]
+DEL = mem[98]
+PUSH mem[97]
+mem[98] = POP
+PUSH mem[98]
+RET = POP
+
+PUSH 3
+mem[99] = POP
+PUSH 5
+mem[98] = POP
+PUSH 7
+mem[97] = POP
+DEL = mem[99]
+DEL = mem[98]
+PUSH 2
+PUSH mem[97]
+DIV
+PUSH 5
+ADD
+mem[98] = POP
+PUSH mem[98]
+RET = POP
